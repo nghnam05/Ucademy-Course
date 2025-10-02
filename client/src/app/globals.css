@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+  body {
+    @apply bg-gray-100;
+  }
+}
+
+@layer components {
+  .slider-bar {
+    @apply bg-white;
+  }
+  .sidebar-link {
+    @apply text-gray-700 hover:text-blue-600 hover:bg-gray-100;
+  }
+
+  .sidebar-link-active {
+    @apply text-blue-600 bg-gray-100;
+  }
+  .svg-animation {
+    stroke-dashoffset: 1000;
+    stroke-dasharray: 1000;
+    animation: dash 4s forwards;
+  }
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+}
