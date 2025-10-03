@@ -8,7 +8,7 @@ const Sliderbar = () => {
   const pathName = usePathname();
 
   return (
-    <div className="slider-bar p-5 border-r border-gray-200">
+    <div className="fixed top-0 left-0 bottom-0 w-[300px] slider-bar p-5 border-r border-gray-200">
       <Link href="/" className="flex items-center gap-2 px-2 mb-8">
         <span className="bg-blue-600 text-white font-medium text-2xl w-10 h-10 flex items-center justify-center rounded-full shadow-md">
           U
