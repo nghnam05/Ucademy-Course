@@ -13,7 +13,6 @@ const CourseItem: React.FC<Course> = ({
   rating,
   reviews,
   duration,
-  views,
   price,
   oldPrice,
   isNew,
@@ -50,7 +49,6 @@ const CourseItem: React.FC<Course> = ({
         rating={rating}
         reviews={reviews}
         duration={duration}
-        views={views}
         price={price}
         oldPrice={oldPrice}
       />

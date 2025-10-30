@@ -1,12 +1,11 @@
 import { CourseInfor } from "@/app/types/CourseProps";
-import { Star, Clock, Eye } from "lucide-react";
+import { Star, Clock } from "lucide-react";
 import React from "react";
 
 const CourseInfo: React.FC<CourseInfor> = ({
   rating,
   reviews,
   duration,
-  views,
   price,
   oldPrice,
 }) => {
@@ -32,23 +31,24 @@ const CourseInfo: React.FC<CourseInfor> = ({
             <span className="text-sm">{duration}</span>
           </div>
 
-          {/* Views */}
-          <div className="flex items-center gap-1 text-gray-600">
+          {/* Views
+          <div className="flex items-center gap-2 text-gray-600">
             <Eye className="w-4 h-4" />
             <span className="text-sm">{views.toLocaleString()}</span>
           </div>
-        </div>
+        </div> */}
 
-        {/* Price */}
-        <div className="flex items-center gap-3">
-          <span className="text-lg font-bold font-roboto text-blue-600">
-            {price.toLocaleString()}
-          </span>
-          {oldPrice && (
-            <span className="text-gray-400 line-through">
-              {oldPrice.toLocaleString()}
+          {/* Price */}
+          <div className="flex items-center gap-3">
+            <span className="text-lg font-bold font-roboto text-blue-600">
+              {price.toLocaleString()}
             </span>
-          )}
+            {oldPrice && (
+              <span className="text-gray-400 line-through">
+                {oldPrice.toLocaleString()}
+              </span>
+            )}
+          </div>
         </div>
       </div>
     </div>
