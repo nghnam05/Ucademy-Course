@@ -4,8 +4,6 @@ import React from "react";
 import CourseInfo from "./CourseInfor";
 import { Course } from "@/app/types/Course";
 
-
-
 const CourseItem: React.FC<Course> = ({
   id,
   title,
@@ -18,7 +16,7 @@ const CourseItem: React.FC<Course> = ({
   isNew,
 }) => {
   return (
-    <div className="course-item bg-white p-4 rounded-2xl border border-gray-100 hover:shadow-lg hover:cursor-pointer transition">
+    <div className="course-item bg-white p-2   rounded-2xl border border-gray-100 hover:shadow-lg hover:cursor-pointer transition">
       {/* Hình ảnh khóa học */}
       <Link href={`/course/${id}`} className="block w-full relative">
         <Image
@@ -39,7 +37,7 @@ const CourseItem: React.FC<Course> = ({
 
       {/* Tên khóa học */}
       <div className="pt-4">
-        <h2 className="course-name font-manrope font-bold text-lg mb-4 line-clamp-2">
+        <h2 className="course-name font-manrope font-bold text-base mb-2 line-clamp-2">
           {title}
         </h2>
       </div>

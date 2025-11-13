@@ -7,7 +7,7 @@ export const courses: Course[] = [
     image:
       "https://images.unsplash.com/photo-1591439657848-9f4b9ce436b9?q=80&w=1300&auto=format&fit=crop",
     rating: 4.8,
-    reviews: 1200, // ✅ sửa thành number thay vì "1,2K người đánh giá"
+    reviews: 1200, 
     duration: "7h30p",
     views: 19177,
     price: 799000,
